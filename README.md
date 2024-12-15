@@ -14,8 +14,8 @@ The core of the piece is based on three DSP files :
 These are the three effects used to transform double-bass sound in realtime. 
 
 In order to reproduce the original patch with more fidelity, it has been decided to stick to its sound design philosophy : adding a reverb bus as well as simple circular spatialization tools : 
-* vital_rev.dsp
-* gmem_spat_auto.dsp 
+* Reaverb (or any convolution reverb program) and an IR for a large hall. The IR is here : [IR](https://drive.google.com/file/d/1ScZeuxC5Pkq6eEOTCjd9hYLgIQG0xGCU/view?usp=sharing)
+* gmem_spat_auto.dsp and gmem_spat_auto_stereo.dsp enables automatic spatialization
 
 In order to perform the piece, there are a lot of options : 
 * Web : Use the provided full-web version
