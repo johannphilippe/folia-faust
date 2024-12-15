@@ -1,0 +1,56 @@
+<!DOCTYPE patchbay>
+<patchbay name="brass" version="0.9.6">
+ <output-sockets>
+  <socket type="jack-midi" exclusive="off" client="system" name="system 1">
+   <plug>midi_capture_1</plug>
+   <plug>midi_capture_2</plug>
+   <plug>midi_capture_3</plug>
+  </socket>
+  <socket type="jack-audio" exclusive="off" client="system" name="audioin">
+   <plug>capture_9</plug>
+   <plug>capture_10</plug>
+   <plug>capture_11</plug>
+   <plug>capture_12</plug>
+  </socket>
+  <socket type="jack-audio" exclusive="off" client="REAPER" name="REAPER 1">
+   <plug>out1</plug>
+   <plug>out2</plug>
+   <plug>out3</plug>
+   <plug>out4</plug>
+   <plug>out5</plug>
+   <plug>out6</plug>
+   <plug>out7</plug>
+   <plug>out8</plug>
+  </socket>
+ </output-sockets>
+ <input-sockets>
+  <socket type="jack-midi" exclusive="off" client="REAPER" name="REAPER 1">
+   <plug>MIDI\ Input\ 8</plug>
+   <plug>MIDI\ Input\ 1</plug>
+   <plug>MIDI\ Input\ 7</plug>
+  </socket>
+  <socket type="jack-audio" exclusive="off" client="REAPER" name="reaperin">
+   <plug>in1</plug>
+   <plug>in2</plug>
+   <plug>in3</plug>
+   <plug>in4</plug>
+  </socket>
+  <socket type="jack-audio" exclusive="off" client="system" name="system 1">
+   <plug>playback_1</plug>
+   <plug>playback_2</plug>
+   <plug>playback_3</plug>
+   <plug>playback_4</plug>
+   <plug>playback_5</plug>
+   <plug>playback_6</plug>
+   <plug>playback_7</plug>
+   <plug>playback_8</plug>
+  </socket>
+ </input-sockets>
+ <slots/>
+ <cables>
+  <cable type="jack-audio" input="system 1" output="REAPER 1"/>
+  <cable type="jack-midi" input="REAPER 1" output="system 1"/>
+  <cable type="jack-audio" input="reaperin" output="audioin"/>
+ </cables>
+</patchbay>
+

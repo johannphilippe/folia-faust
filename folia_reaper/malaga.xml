@@ -1,0 +1,30 @@
+<!DOCTYPE patchbay>
+<patchbay name="malaga" version="0.9.6">
+ <output-sockets>
+  <socket exclusive="off" client="system" type="jack-audio" name="system 1">
+   <plug>capture_1</plug>
+  </socket>
+  <socket exclusive="off" client="REAPER" type="jack-audio" name="REAPER 1">
+   <plug>out1</plug>
+   <plug>out2</plug>
+   <plug>out3</plug>
+   <plug>out4</plug>
+  </socket>
+ </output-sockets>
+ <input-sockets>
+  <socket exclusive="off" client="system" type="jack-audio" name="system 1">
+   <plug>playback_1</plug>
+   <plug>playback_2</plug>
+  </socket>
+  <socket exclusive="off" client="REAPER" type="jack-audio" name="REAPER 1">
+   <plug>in1</plug>
+   <plug>in2</plug>
+  </socket>
+ </input-sockets>
+ <slots/>
+ <cables>
+  <cable input="REAPER 1" type="jack-audio" output="system 1"/>
+  <cable input="system 1" type="jack-audio" output="REAPER 1"/>
+ </cables>
+</patchbay>
+
