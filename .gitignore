@@ -1,0 +1,7 @@
+/archive
+/build
+/folia_reaper/Media
+/folia_reaper/Backups
+*.wav
+*.mp4
+*erproj
